@@ -1,0 +1,302 @@
+body{
+    background: black;
+    font-family: "Montserrat", sans-serif;
+    font-family: 'Panchang', sans-serif;
+    
+}
+
+.header{
+    display: flex;    
+    background: rgb(243, 168, 168);
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    justify-content: flex-end;
+    align-items: center;   
+    background-image: url('fondo.JPG'); /* Cambia al nombre de tu imagen */
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+
+/* Navegador */
+.navegador {
+    display: flex;
+    justify-content: center; /* Tabs a la derecha */
+    align-items: center;
+    height: 50px; /* aumenta altura si quieres más espacio */
+    width: 100%;
+     /* padding lateral: 20px para que el borde derecho se vea */
+    background: whitesmoke;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-sizing: border-box; /* asegura que el padding no afecte el width */
+    margin-top: 2px;
+    overflow: hidden; 
+    max-height: 70px;
+   
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 15px; /* espacio entre cada tab */
+    border-radius: 80px;
+    padding: 0px 15px; /* espacio interno para que no toque el borde del nav */
+    justify-content: center;
+}
+
+.tabs *{
+    z-index: 4;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+/* Cada tab individual */
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 0 50px; /* espacio interno del tab */
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: color 0.15s ease-in;
+    
+    flex: 1 1 auto; /* hace que puedan encogerse si hace falta */
+    min-width: 10px; /* no se hacen demasiado pequeños */
+    max-width: 10px; / /* opcional para distinguirlos */
+    
+}
+
+.badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 144px;
+    border-radius: 50%;
+    background: #B7F397;
+}
+
+
+.logo{
+    width: 350px;
+    height: 300px;
+    margin-right: 15px;
+
+}
+
+.principal{
+    background: rgb(220, 225, 220);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    background-image: url('fondoprincipal2.JPG'); /* Cambia al nombre de tu imagen */
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 15px;
+}
+
+.izquierda{
+    background: rgb(14, 195, 195);
+    width: 40%;
+    height: 80px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.vinilo{
+    width: 250px;
+    height: 250px;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.7)); #Añadir algo de sombra
+    transition: scale 0.2s ease;
+}
+/* Efecto al pasar el ratón (hover) */
+.vinilo:hover {
+    scale: 1.2; /* Aumenta el tamaño un 10% al pasar el ratón */
+    cursor: pointer; /* Opcional: pone la manita del ratón */
+}
+.derecha{
+    background: lightseagreen;
+    width: 45%;
+    height: 80px;
+    border-radius: 30px;
+}
+
+.portada {
+    height: calc(100vh - 4px);
+    width: 85%;
+    background-image: url('fondo.JPG');
+    background-size: cover;
+    background-position: center;
+   
+    position: relative; /* referencia para los hijos */
+    box-shadow: 0 0 20px rgba(0,0,0,0.3); /* efecto revista */
+}
+
+
+.logo2{
+    height: 12vh;
+    width: 13vw;
+    position: absolute;
+    right: 80px;                 /* más pegado al borde */
+    bottom: 40px;
+   
+    transform-origin: center;               /* más pegado al borde */
+    
+}
+.cover-text {
+    position: absolute;   /* solo el contenedor */
+    top: 40px;
+    left: 40px;
+    color: yellow;
+}
+.title-text {
+    font-family: 'Panchang', sans-serif;
+    font-size: 10vw;             /* ajusta tamaño */
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    margin-left: 20px;
+    margin-top: 20px;
+
+    color: #E14F21;
+    white-space: nowrap;          /* evita salto de línea */
+}
+
+.text-description{
+    font-family: 'Hind', sans-serif;
+    font-size: 1vw; 
+    letter-spacing: 0.2em;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-weight: 500;
+
+    color: black;
+    white-space: nowrap; 
+
+}
+
+/* TEXTO PRINCIPAL */
+.cover-text {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+/* META INFO INDEPENDIENTE */
+.meta-info {
+    position: absolute;
+    right: 30px;      /* borde derecho */
+    bottom: 20px;     /* borde inferior */
+
+    font-family: 'Hind', sans-serif;
+    font-size: 0.9vw;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #074B71;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.top-right-btn {
+    position: absolute;      /* importante para colocarlo */
+    top: 20px;               /* distancia desde el borde superior */
+    right: 30px;             /* distancia desde el borde derecho */
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2.5rem;       /* tamaño del icono */
+    color: #074B71;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: flash 2s infinite; 
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    30% { opacity: 0.3; }
+}
+
+
+.top-right-btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.top-left-btn {
+    position: absolute;      /* importante para colocarlo */
+    bottom: 20px;               /* distancia desde el borde superior */
+    left: 30px;             /* distancia desde el borde derecho */
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2.5rem;       /* tamaño del icono */
+    color: #074B71;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+.top-left-btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.destacado {
+    height: calc(100vh - 4px); /* ocupa toda la pantalla */
+    background-image: url('fondo.JPG');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centra horizontalmente por defecto */
+    justify-content: center; /* centra verticalmente */
+}
+
+/* Título centrado */
+.artist-text {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 700;
+    font-size: 5rem; /* ajusta según prefieras */
+    color: #DC3392;
+    margin-bottom: 40px; /* separación con el mapa */
+    text-align: center;
+}
+
+/* Mapa más a la izquierda */
+.logo-svg {
+    background: transparent;
+    height: 600px;
+    width: 600px;
+    transform: translateX(-200px); /* lo mueve 50px hacia la izquierda */
+}
+
