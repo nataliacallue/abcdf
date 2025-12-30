@@ -13,7 +13,7 @@ body{
     border-radius: 15px;
     justify-content: flex-end;
     align-items: center;   
-    background-image: url('fondo.JPG'); /* Cambia al nombre de tu imagen */
+    background-image: url('fondo.jpg'); /* Cambia al nombre de tu imagen */
     background-size: cover; 
     background-position: center; 
 }
@@ -140,7 +140,7 @@ input[type=radio]{
 .portada {
     height: calc(100vh - 4px);
     width: 85%;
-    background-image: url('fondo.JPG');
+    background-image: url('fondo.jpg');
     background-size: cover;
     background-position: center;
    
@@ -270,7 +270,7 @@ input[type=radio]{
 
 .destacado {
     height: calc(100vh - 4px); /* ocupa toda la pantalla */
-    background-image: url('fondo.JPG');
+    background-image: url('fondo.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
